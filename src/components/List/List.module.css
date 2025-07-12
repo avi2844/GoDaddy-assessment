@@ -1,0 +1,25 @@
+.mainContainer {
+  max-width: 800px;
+  width: 90%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin: 16px auto;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  text-align: left;
+  word-break: break-word;
+}
+
+.mainContainer:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+span {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
