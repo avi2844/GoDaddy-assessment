@@ -37,3 +37,6 @@ Click on RepoModal.cy.js file to run the test
 - Material UI - For ready-made, responsive, and accessible UI components. It speeds up development by providing a polished and consistent design system that works well across devices.
 - Context API - To manage and share the fetched data (repository list) across components. This keeps the state centralized and makes the code cleaner without needing a heavy state management library like Redux.
 - Cypress - It provides a reliable way to write both component tests and end-to-end tests. It also offers a great visual interface for debugging tests in the browser.
+
+## Live Application
+https://go-daddy-assessment.vercel.app/
