@@ -17,7 +17,7 @@ function RepoModal({ open, handleClose, RepoId }) {
   const [repo, setRepo] = useState([]);
 
   useEffect(() => {
-    const matchedRepo = RepoState.filter((ele) => ele.id === RepoId);
+    const matchedRepo = RepoState.find((ele) => ele.id === RepoId);
     setRepo(matchedRepo);
   }, [RepoId]);
 
@@ -31,22 +31,22 @@ function RepoModal({ open, handleClose, RepoId }) {
             justifyContent: "space-between",
           }}
         >
-          <h2>{repo[0]?.full_name}</h2>
+          <h2>{repo?.full_name}</h2>
           <IconButton onClick={handleClose}>
             <CloseIcon />
           </IconButton>
         </Box>
         <Divider sx={{ mb: 2 }} />
-        <Typography>{repo[0]?.description}</Typography>
-        <Typography>📝 Language(s): {repo[0]?.language}</Typography>
-        <Typography>🍴 Forks: {repo[0]?.forks_count}</Typography>
-        <Typography>🐞 Open Issues: {repo[0]?.open_issues_count}</Typography>
-        <Typography>👀 Watchers: {repo[0]?.watchers_count}</Typography>
+        <Typography>{repo?.description}</Typography>
+        <Typography>📝 Language(s): {repo?.language}</Typography>
+        <Typography>🍴 Forks: {repo?.forks_count}</Typography>
+        <Typography>🐞 Open Issues: {repo?.open_issues_count}</Typography>
+        <Typography>👀 Watchers: {repo?.watchers_count}</Typography>
         <Button
           variant="contained"
           color="primary"
           sx={{ mt: 3 }}
-          href={repo[0]?.html_url}
+          href={repo?.html_url}
           target="_blank"
         >
           View on Github
